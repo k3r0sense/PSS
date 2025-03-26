@@ -23,7 +23,7 @@ $packages = @(
     "7zip.7zip",
     
     # Мессенджеры
-    "WhatsApp.WhatsApp", # Альтернативный ID
+    "9NKSQGP7F2NH", # WhatsApp ID
     "Telegram.TelegramDesktop",
     
     # Dev tools
@@ -36,6 +36,7 @@ $packages = @(
     
     # Графика
     "Figma.Figma",
+    "Figma.FigmaAgent",
     
     # Системные утилиты
     "Microsoft.PowerToys",
@@ -103,7 +104,7 @@ function Install-WSL {
         }
 
         Write-Host "  ⚙ Устанавливаем WSL и Ubuntu..." -ForegroundColor Yellow
-        wsl --install -d Ubuntu --no-distribution
+        wsl --install Ubuntu
         wsl --update
         
         Write-Host "  ✔ WSL настроен" -ForegroundColor Green
