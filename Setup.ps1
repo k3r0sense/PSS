@@ -19,7 +19,7 @@ $packages = @(
     "Microsoft.PowerShell",
     "Microsoft.VisualStudioCode",
     "Microsoft.WindowsTerminal",
-    "PostgreSQL.PostgreSQL",
+    "PostgreSQL.PostgreSQL.17",
     
     # Графика
     "Figma.Figma",
