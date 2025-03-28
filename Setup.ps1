@@ -5,10 +5,13 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
 }
 
 $packages = @(
+    # Necessary components
     "7zip.7zip",
+    "Microsoft.VCRedist.2015+.x64",
+    "Microsoft.VCRedist.2015+.x86",
     
     # Communication
-    "9NKSQGP7F2NH", # WhatsApp
+    # "9NKSQGP7F2NH", # WhatsApp
     "Telegram.TelegramDesktop",
     
     # Dev tools
@@ -25,8 +28,6 @@ $packages = @(
     
     # Utilities
     "Microsoft.PowerToys",
-    "Microsoft.VCRedist.2015+.x64",
-    "Microsoft.VCRedist.2015+.x86",
     "RustDesk.RustDesk"
 )
 
