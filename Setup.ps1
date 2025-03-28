@@ -4,6 +4,9 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
     exit 1
 }
 
+# Updating pre-installed apps
+winget update --all
+
 $packages = @(
     # Necessary components
     "7zip.7zip",
